@@ -1,0 +1,209 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+/* variables */
+:root {
+    --green-color:#7ACC2D;
+    --white-color:white;
+    --black-color:#313337;
+/* Tipografia */
+    --normal:12px;
+/*Espaciado*/
+    --space:10px;
+    --space-2:20px;
+/*box shadow*/
+    --box: 0 0 2px 1px #e6e5e9;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*alineacion vertical*/
+    background-color: var(--green-color);
+    padding: var(--space);
+    color: var(--white-color);   
+}
+
+.main-nav__menu-list {
+    display: flex;
+}
+
+.main-nav__menu-item {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.main-nav__menu-item-link {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.main-nav__menu-item-link:hover {
+    color: var(--white-color);   
+}
+
+/* ------------------------------------------- MAIN SECTION */
+
+.main-section {
+    padding: 15%;
+    text-align: center;
+}
+
+/* -------------------------------------------  PRODUCTOS */
+
+.products-section {
+    background-image: url('../images/curve.png');
+    height: 95px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 15%;
+    display: flex;
+}
+
+.products-section__product {
+    padding: var(--space);
+    margin-top:-226px;
+}
+
+.products-section__product-content {
+    background-color: var(--white-color);   
+    padding: var(--space);
+    box-shadow: var(--box);
+}
+
+.products-section__product-content-image {
+    text-align: center;
+}
+
+.products-section__product-content-button {
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--white-color);   
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.products-section__product-content-button:hover {
+    background-color: #5e9e22;
+}
+
+.descriptions-section {
+    display: flex;
+    padding: 10%;
+}
+
+.descriptions-section__description {
+    text-align: center;
+    padding: 20px;
+}
+
+.descriptions-section__description-content-image {
+    max-height: 100px;
+}
+
+.descriptions-section__description-text {
+    text-align: justify;
+} 
+
+hr{
+    opacity: .2;
+}
+
+.comments-tittle {
+    text-align: center;
+}
+
+.comments-section {
+    display: flex;
+    padding: 5%;
+}
+
+.comments-section__comment {
+    padding: var(--space);
+}
+
+.comments-section__comment-content {
+    box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+
+.comments-section__comment-content-image {
+    width: 100%;
+}
+
+.comments-section__comment-text {
+    padding: var(--space);
+}
+
+/* -------------------------------------------  VENTA */
+
+.modulo-pago-section {
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space-2);
+}
+
+.modulo-pago-section__image {
+    max-width: 150px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.modulo-pago-section__form-label {
+    font-size: var(--normal);
+} 
+
+.modulo-pago-section__form-input {
+    margin-top: var(--space);
+    width: 100%;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+}
+
+.modulo-pago-section__form-submit {
+    margin-top: 10px;
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--white-color);   
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.modulo-pago-section__form-submit:hover {
+    background-color: #5e9e22;
+}
+
+
+
+/* -------------------------------------------  FOOTER */
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--normal);
+    background-color: var(--black-color);
+    padding: var(--space);
+    color: var(--white-color);
+}
+
+.footer-section__contact {
+    color: var(--green-color);
+    text-decoration: none;
+}
+
